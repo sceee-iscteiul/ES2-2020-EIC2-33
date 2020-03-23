@@ -36,7 +36,15 @@
             <groupId>org.jacoco</groupId>
             <artifactId>org.jacoco.report</artifactId> <!-- we're done with ReportMojo now, so we don't need to depend on the maven plugin anymore -->
             <version>0.7.9</version>
-</dependency>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-javadoc-plugin -->
+		<dependency>
+   			<groupId>org.apache.maven.plugins</groupId>
+    		<artifactId>maven-javadoc-plugin</artifactId>
+    		<version>3.2.0</version>
+		</dependency>
+		
         
     </dependencies>
  
