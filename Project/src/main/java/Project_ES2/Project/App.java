@@ -1,9 +1,6 @@
 package Project_ES2.Project;
 
-/**
- * Hello world!
- *
- */
+
 public class App 
 {
 	
@@ -20,7 +17,11 @@ public class App
 		return b;
 	}
 
-	
+	/**
+	 * Hello world!
+	 * main
+	 *
+	 */
     public static void main( String[] args )
     {
     	App p = new App();
