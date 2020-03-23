@@ -31,6 +31,13 @@
             <version>${junit.platform.version}</version>
             <scope>test</scope>
         </dependency>
+        
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>org.jacoco.report</artifactId> <!-- we're done with ReportMojo now, so we don't need to depend on the maven plugin anymore -->
+            <version>0.7.9</version>
+</dependency>
+        
     </dependencies>
  
     <build>
@@ -44,6 +51,26 @@
         <testFailureIgnore>true</testFailureIgnore>
     </configuration>
     </plugin>
+    
+    <plugin>  
+   				 <groupId>org.jacoco</groupId>  
+    			 <artifactId>jacoco-maven-plugin</artifactId>  
+    			 <version>0.7.9</version>  
+    			 <executions>  
+       			 <execution>  
+           		 	<goals>  
+                		<goal>prepare-agent</goal>  
+            		</goals>  
+        		 </execution>  
+       			 <execution>  
+           	 		<id>report</id>  
+            		<phase>prepare-package</phase>  
+            		<goals>  
+                <goal>report</goal>  
+            </goals>  
+        </execution>  
+    </executions>  
+</plugin>       
             
         </plugins>
     </build>
