@@ -1,5 +1,5 @@
 
-def dockeruser = "40404040"
+def dockeruser = "sene12345"
 def imagename = "ubuntu:16"
 def container = "apache2"
 node {
