@@ -24,11 +24,11 @@ stage('Build Docker Imagae'){
 stage('Remove Existing Container'){
      powershell "docker rm ${container}"
     }
-    
+**/    
 stage('Tag Docker Image'){
     powershell "docker tag ${imagename} ${env.dockeruser}/ubuntu:16.04"
     }
-   **/
+   
 
 }
  
