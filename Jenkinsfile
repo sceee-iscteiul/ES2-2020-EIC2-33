@@ -1,7 +1,7 @@
 
 def dockeruser = "sene12345"
-def imagename = "HelloWord"
-def container = "HelloWordContainer"
+def imagename = "helloworldubuntu"
+def container = "helloworldubuntuContainer"
 node {
    echo 'Building Apache Docker Image'
 
