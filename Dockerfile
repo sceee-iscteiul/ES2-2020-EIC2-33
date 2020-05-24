@@ -1,6 +1,6 @@
 
 # Source Image name
-from openjdk:8
+from java:8-jdk-alpine
 #
 add Project/jars/helloworldubuntu.jar helloworldubuntu.jar
 #
