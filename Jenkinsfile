@@ -13,7 +13,7 @@ stage('Build Docker Imagae'){
      powershell "docker build -t  ${imagename} ."
     }
     
-stage('Stop Existing Container'){
+/**stage('Stop Existing Container'){
      powershell "docker stop ${container}"
     }
     
@@ -29,5 +29,6 @@ stage('Tag Docker Image'){
     powershell "docker tag ${imagename} ${env.dockeruser}/ubuntu:16.04"
     }
 
-
+**/
 }
+ 
