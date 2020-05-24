@@ -14,7 +14,7 @@ stage('Build Docker Imagae'){
     }
    
    stage ('Runing Container to test built Docker Image'){
-    powershell "docker run -dit --name ${container} -p 80:8085 ${imagename}"
+    powershell "docker run -dit --name ${container} -p 80:8086 ${imagename}"
     }
 
 }
