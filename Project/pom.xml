@@ -89,7 +89,11 @@
 </plugin>       
             
         </plugins>
-        
+    
+    <finalName>
+    	helloworldubuntu
+    </finalName>    
     </build>
+    
     
 </project>
