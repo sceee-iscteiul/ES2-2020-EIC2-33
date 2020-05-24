@@ -92,7 +92,15 @@
     
     <finalName>
     	helloworldubuntu
-    </finalName>    
+    	
+    </finalName>
+   	<resources>
+    	<resource>
+       		<directory>/jars</directory>
+    	</resource>
+   </resources>  
+   
+    
     </build>
     
     
