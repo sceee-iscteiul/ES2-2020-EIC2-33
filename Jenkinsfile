@@ -16,19 +16,6 @@ stage('Build Docker Imagae'){
    stage ('Runing Container to test built Docker Image'){
     powershell "docker run -dit --name ${container} -p 80:8085 ${imagename}"
     }
-    
-/**stage('Stop Existing Container'){
-     powershell "docker stop ${container}"
-    }
-    
-stage('Remove Existing Container'){
-     powershell "docker rm ${container}"
-    }
-**/    
-stage('Tag Docker Image'){
-    powershell "docker tag ${imagename} ${env.dockeruser}/ubuntu:16.04"
-    }
-   
 
 }
  
