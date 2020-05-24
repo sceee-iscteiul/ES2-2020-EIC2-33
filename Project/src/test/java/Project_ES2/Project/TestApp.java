@@ -1,7 +1,8 @@
 package Project_ES2.Project;
 
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+
 import junit.framework.TestCase;
 
 
