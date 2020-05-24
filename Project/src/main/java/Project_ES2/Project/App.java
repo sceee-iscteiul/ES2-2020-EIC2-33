@@ -16,6 +16,18 @@ public class App
 			return a;
 		return b;
 	}
+	
+	/**
+	 *This method returns min number  between 'a' and 'b'
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	public int min(int a, int b) {
+		if(a > b)
+			return b;
+		return a;
+	}
 
 	/**
 	 * Hello world!

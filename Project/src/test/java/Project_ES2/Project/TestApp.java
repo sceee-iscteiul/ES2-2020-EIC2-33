@@ -1,11 +1,9 @@
 package Project_ES2.Project;
 
 
-
-
 import org.junit.jupiter.api.Test;
-
 import junit.framework.TestCase;
+
 
 public class TestApp extends TestCase {
 
@@ -18,5 +16,10 @@ public class TestApp extends TestCase {
 		App p = new App();
 		assertEquals(4, p.max(3, 4));
 	}
-
+	
+	@Test
+	public final void testMin() {
+		App p = new App();
+		assertEquals(3, p.min(3, 4));
+	}
 }
