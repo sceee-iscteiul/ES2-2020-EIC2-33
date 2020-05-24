@@ -2,7 +2,7 @@
 # Source Image name
 from openjdk:8
 #
-add target/helloworldubuntu.jar
+add target/helloworldubuntu.jar helloworldubuntu.jar
 #
 expose 8085
 #
