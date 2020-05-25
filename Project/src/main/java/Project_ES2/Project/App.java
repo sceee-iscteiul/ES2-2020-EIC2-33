@@ -30,8 +30,8 @@ public class App
 	
 	/**
 	 * This method returns the average number between 'a' and 'b'
-	 * @param
-	 * @param
+	 * @param a
+	 * @param b
 	 * @return
 	 */
 	
