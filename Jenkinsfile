@@ -26,7 +26,7 @@ stage('Remove Existing Container'){
      powershell "docker rm ${container}"
     }
     
-    stage('Remove Existing Container'){
+    stage('Docker compose'){
      powershell "docker-compose up -d"
     }
     **/
