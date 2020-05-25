@@ -1,7 +1,7 @@
 # Source Image name
 FROM java:8-jdk-alpine
 #
-ADD Project/jars/helloworldubuntu.jar ./helloworldubuntu.jar
+ADD Project/jars/helloworldubuntu.jar helloworldubuntu.jar
 #
 #COPY ./build/libs/Project/helloworldubuntu.jar /usr/app/
 #WORKDIR /usr/app
