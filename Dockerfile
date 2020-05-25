@@ -1,5 +1,5 @@
 
-RUN pwd
+RUN echo "$PWD"
 # Source Image name
 FROM java:8-jdk-alpine
 #
