@@ -27,6 +27,17 @@ public class App
 			return b;
 		return a;
 	}
+	
+	/**
+	 * This method returns the average number between 'a' and 'b'
+	 * @param
+	 * @param
+	 * @return
+	 */
+	
+	public double average(int a, int b) {
+		return (a+b) / 2.0;
+	}
 
 	/**
 	 * Hello world!
@@ -38,5 +49,6 @@ public class App
     	App p = new App();
         System.out.println( "Hello World!" );
         System.out.println(p.max(2, 4));
+        System.out.println(p.average(2, 4));
     }
 }

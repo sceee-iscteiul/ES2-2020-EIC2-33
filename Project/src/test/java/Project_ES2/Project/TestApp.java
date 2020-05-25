@@ -23,4 +23,10 @@ public class TestApp extends TestCase {
 		App p = new App();
 		assertEquals(3, p.min(3, 4));
 	}
+	
+	@Test
+	public final void testAverage() {
+		App p = new App();
+		assertEquals(3.5, p.average(3, 4));
+	}
 }
