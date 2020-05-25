@@ -1,5 +1,5 @@
 
-#RUN pwd
+RUN pwd
 # Source Image name
 FROM java:8-jdk-alpine
 #
