@@ -25,11 +25,11 @@ stage('Build Docker Imagae'){
 stage('Remove Existing Container'){
      powershell "docker rm ${container}"
     }
-    
+    **/
     stage('Docker compose'){
      powershell "docker-compose up -d"
     }
-    **/
+    
    
    
    stage ('Runing Container to test built Docker Image'){
