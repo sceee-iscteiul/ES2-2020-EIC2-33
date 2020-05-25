@@ -6,7 +6,7 @@ ADD Project/jars/helloworldubuntu.jar helloworldubuntu.jar
 #
 EXPOSE 8086
 #
-entrypoint ["java", "-jar", "helloworldubuntu.jar"]
+entrypoint ["java", "-jar", "Project/jars/helloworldubuntu.jar"]
 
 #CMD java -jar helloworldubuntu.jar
 
