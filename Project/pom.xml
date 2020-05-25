@@ -19,6 +19,8 @@
     </properties>
  
     <dependencies>
+    
+    
         <dependency>
        		 <groupId>org.junit.jupiter</groupId>
              <artifactId>junit-jupiter-engine</artifactId>
@@ -43,7 +45,7 @@
  
     <build>
         <plugins>
-        
+         
         
           
     <plugin>
@@ -87,16 +89,28 @@
         </execution>  
     </executions>  
 </plugin>       
+          <plugin>
+      <!-- Build an executable JAR -->
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+      <version>3.1.0</version>
+      <configuration>
+        <archive>
+          <manifest>
+            <addClasspath>true</addClasspath>
+            <classpathPrefix>lib/</classpathPrefix>
+            <mainClass>Project_ES2.Project.App</mainClass>
+          </manifest>
+        </archive>
+      </configuration>
+    </plugin> 
             
         </plugins>
     
-    <finalName>
-    	helloworldubuntu
-    	
-    </finalName>
+    <finalName>helloworldubuntu</finalName>
    	<resources>
     	<resource>
-       		<directory>/jars</directory>
+       		<directory>jars</directory>
     	</resource>
    </resources>  
    
