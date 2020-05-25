@@ -10,7 +10,7 @@ stage('Git Checkout') {
     }
     
 stage('Build Docker Imagae'){
-     powershell "docker build -t  ${imagename} ."
+     powershell "docker build -f Dockerfile -t  ${imagename} ."
     }
    
    stage('Stop Existing Container'){
