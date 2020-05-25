@@ -13,6 +13,21 @@ stage('Build Docker Imagae'){
      powershell "docker build -t  ${imagename} ."
     }
    
+ /**  stage('Stop Existing Container'){
+     powershell "docker stop ${container}"
+    }
+    
+    
+stage('Remove Existing Container'){
+     powershell "docker rm ${container}"
+    }
+    
+   stage('run docker compose file'){
+     powershell "Docker-compose up -d"
+    }
+    
+    **/
+   
    stage ('Runing Container to test built Docker Image'){
     powershell "docker run -d -p 80:8086 --name ${container}  ${imagename}"
     }
