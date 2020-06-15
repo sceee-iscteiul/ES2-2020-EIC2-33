@@ -13,7 +13,7 @@ stage('Git Checkout') {
     
     
 stage('Build Docker Imagae'){
-     powershell "docker build -f Dockefile -t  ${imagename} ."
+     powershell "docker build -f Dockerfile -t  ${imagename} ."
     }
    
    
